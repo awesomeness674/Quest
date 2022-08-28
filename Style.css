@@ -1,0 +1,124 @@
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:0;
+	padding:0;
+	background-color: #34495e;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	height:100vh;
+	overflow:hidden;
+}
+a{
+    border: 3px solid gray;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+   font-size:20px;
+   width:auto;
+   border-radius:30px;
+   color:blue;
+   position:absolute;
+   top:80%;
+   
+}
+
+
+.container{
+	width:500px;
+	height:500px;
+	background-color: #ccc;
+	border-radius:50%;
+	border:15px solid #dde;
+	position: relative;
+	overflow: hidden;
+	transition: 5s;
+}
+
+.container div{
+	height:50%;
+	width:200px;
+	position: absolute;
+	clip-path: polygon(100% 0 , 50% 100% , 0 0 );
+	transform:translateX(-50%);
+	transform-origin:bottom;
+	text-align:center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size:20px;
+	font-weight:bold;
+	font-family:sans-serif;
+	color:#fff;
+	left:135px;
+}
+
+.arrow{
+	position: absolute;
+	top:0;
+	left:50%;
+	transform: translateX(-50%);
+	color:#fff;
+	margin-top:170px;
+}
+
+.arrow::before{
+	content:"\1F817";
+	font-size:50px;
+}
+
+#spin{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:10;
+	background-color: #e2e2e2;
+	text-transform: uppercase;
+	border:8px solid #fff;
+	font-weight:bold;
+	font-size:20px;
+	color:#a2a2a2;
+	width: 80px;
+	height:80px;
+	font-family: sans-serif;
+	border-radius:50%;
+	cursor: pointer;
+	outline:none;
+	letter-spacing: 1px;
+	
+}
+.container .Choice1{
+	background-color: red;
+	left:50%;
+}
+.container .Choice2{
+	background-color: teal;
+	transform: rotate(45deg);
+}
+.container .Choice3{
+	background-color: purple;
+	transform:rotate(90deg);
+}
+.container .Choice4{
+	background-color: orange;
+	transform: rotate(135deg);
+}
+.container .Choice5{
+	background-color: green;
+	transform: rotate(180deg);
+}
+.container .Choice6{
+	background-color: pink;
+	transform: rotate(225deg);
+}
+.container .Choice7{
+	background-color: blue;
+	transform: rotate(270deg);
+}
+.container .Choice8{
+	background-color: turquoise;
+	transform: rotate(315deg);
+}

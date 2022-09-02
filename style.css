@@ -21,11 +21,22 @@ a{
    border-radius:30px;
    color:blue;
    position:absolute;
-   top:80%;
+   top:90%;
+ 
    
 }
-
-
+.header {
+	padding: 10px;
+	text-align: center;
+	background: #1abc9c;
+	color: white;
+	font-size: 20px;
+  }
+.heading {
+    font-size: 23px;
+    width: 100%;
+    margin: 0px;
+}
 .container{
 	width:500px;
 	height:500px;

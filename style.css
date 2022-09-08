@@ -72,7 +72,7 @@ a{
 	left:50%;
 	transform: translateX(-50%);
 	color:#fff;
-	margin-top:170px;
+	margin-top:50px;
 }
 
 .arrow::before{
